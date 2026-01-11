@@ -13,6 +13,8 @@ export class KafkaBroker implements MessageBroker {
       brokers,
     };
 
+
+    
     if (process.env.NODE_ENV === "production") {
       kafkaConfig = {
         ...kafkaConfig,
